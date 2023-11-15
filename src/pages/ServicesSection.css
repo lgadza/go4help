@@ -1,0 +1,21 @@
+.ServicesSection h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .ServicesSection h3 {
+    margin-top: 15px;
+  }
+  
+  .ServicesSection p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .ServicesSection .btn-danger {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+  }
+  
+  /* Add your additional styles here */
+  

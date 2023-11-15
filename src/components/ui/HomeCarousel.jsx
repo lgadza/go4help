@@ -13,9 +13,9 @@ const HomeCarousel = () => {
     />
     <Carousel.Caption>
       <h1>We are where people need help</h1>
-      <Button variant="primary" size="lg" active>
-    Primary button
-  </Button>{' '}
+      <Button variant="secondary" size="lg" block>
+    Learn more
+  </Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -27,7 +27,9 @@ const HomeCarousel = () => {
 
     <Carousel.Caption>
       <h1>We are where people need help</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <Button variant="secondary" size="lg" block>
+    Learn more
+  </Button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -39,7 +41,9 @@ const HomeCarousel = () => {
 
     <Carousel.Caption>
       <h1>We are where people need help</h1>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <Button variant="secondary" size="lg" block>
+    Learn more
+  </Button>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>

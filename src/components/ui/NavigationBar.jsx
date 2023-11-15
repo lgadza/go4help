@@ -7,11 +7,11 @@ const NavigationBar = () => {
     <Container fluid  className='navigation-bar'>
     <Container>
     <Navbar  className='d-flex a'>
-      <Navbar.Brand href="#home">GO4Help</Navbar.Brand>
+      <Navbar.Brand href="/">GO4Help</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className='d-flex'>
         <Nav className="me-auto">
-          <Nav.Link href="#home">ABOUT US</Nav.Link>
+          <Nav.Link href="/about-us">ABOUT US</Nav.Link>
           <Nav.Link href="#link">OUR PROJECTS</Nav.Link>
           <Nav.Link href="#link">OUR PROJECTS</Nav.Link>
           {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
