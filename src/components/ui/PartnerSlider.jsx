@@ -1,46 +1,34 @@
 import React from 'react';
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './PartnerSlider.css'
+const images = [
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png",
+    "https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png",
+  ];
+  
 const PartnerSlider = () => {
-  // Settings for the slider
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 520,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-    ],
-  };
-
-  return (
-    <div className="container">
-      <h2>Our Partners</h2>
-      <Slider {...settings}>
-        <div><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg" alt="Partner Logo" /></div>
-        <div><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg" alt="Partner Logo" /></div>
-        {/* ... Add the rest of your images here */}
-      </Slider>
-    </div>
-  );
+    return (
+        <div className="slider mt-5">
+          <div className="slide-track">
+            {images.map((src, index) => (
+              <div className="slide" key={index}>
+                <img src={src} height="100" width="250" alt="" />
+              </div>
+            ))}
+            {/* Duplicate images for infinite effect */}
+            {images.map((src, index) => (
+              <div className="slide" key={`duplicate-${index}`}>
+                <img src={src} height="100" width="250" alt="" />
+              </div>
+            ))}
+          </div>
+        </div>
+      );
 };
 
 export default PartnerSlider;
