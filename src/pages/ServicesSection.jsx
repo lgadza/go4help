@@ -4,6 +4,7 @@ import { HandThumbsUp, Heart, People, Globe } from 'react-bootstrap-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ServicesSection.css'; 
 import NavigationBar from '../components/ui/NavigationBar';
+import PartnerSlider from '../components/ui/PartnerSlider';
 
 const ServicesSection = () => {
   return (
@@ -39,6 +40,7 @@ const ServicesSection = () => {
         </Col>
       </Row>
     </Container>
+    <PartnerSlider/>
     </Container>
   );
 };
