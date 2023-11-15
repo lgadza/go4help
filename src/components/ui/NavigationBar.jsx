@@ -6,7 +6,7 @@ const NavigationBar = () => {
   return (
     <Container fluid  className='navigation-bar'>
     <Container>
-    <Navbar bg="light" className='d-flex a'>
+    <Navbar  className='d-flex a'>
       <Navbar.Brand href="#home">GO4Help</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse className='d-flex'>

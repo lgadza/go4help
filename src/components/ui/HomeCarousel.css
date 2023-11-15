@@ -1,0 +1,28 @@
+.carousel-img{
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-caption {
+    bottom: 30%;
+}
+.carousel-caption h1{
+    font-weight: 700;
+    font-size: 6rem;
+}
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+  }
+  .carousel-item {
+    position: relative;
+  }
+  .carousel-caption {
+    z-index: 2; 
+  }
+      
