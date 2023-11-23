@@ -12,8 +12,8 @@ const HomeCarousel = () => {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h1>We are where people need help</h1>
-      <Button variant="secondary" size="lg" block>
+      <h1 className='main-green-color'>We are where people need help</h1>
+      <Button variant="btn" size="lg" block>
     Learn more
   </Button>
     </Carousel.Caption>
@@ -26,8 +26,8 @@ const HomeCarousel = () => {
     />
 
     <Carousel.Caption>
-      <h1>We are where people need help</h1>
-      <Button variant="secondary" size="lg" block>
+      <h1 className='main-green-color'>We are where people need help</h1>
+      <Button variant="btn" size="lg" block>
     Learn more
   </Button>
     </Carousel.Caption>
@@ -40,8 +40,8 @@ const HomeCarousel = () => {
     />
 
     <Carousel.Caption>
-      <h1>We are where people need help</h1>
-      <Button variant="secondary" size="lg" block>
+      <h1 className='main-green-color'>We are where people need help</h1>
+      <Button variant="btn" size="lg" block>
     Learn more
   </Button>
     </Carousel.Caption>

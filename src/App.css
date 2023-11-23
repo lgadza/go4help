@@ -1,9 +1,39 @@
+:root{
+  --main-orange-color:rgb(241, 126, 23);
+  --main-green-color:rgb(176, 203, 37);
+  --main-green-bg:rgb(176, 203, 37,0.5);
+  --main-orange-bg:rgb(241, 126, 23,0.5);
 
+}
 .App {
   text-align: center;
   min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* font-family: 'Helvetica Neue', 'Arial Black', Arial, sans-serif; */
 }
 
+.main-orange-color{
+  color: var(--main-orange-color) !important;
+}
+.main-green-color{
+  color: var(--main-green-color) !important;
+}
+.orange-bg{
+  background-color: var(--main-orange-bg);
+}
+.green-bg{
+  background-color: var(--main-green-bg);
+}
+.btn{
+  border-color: var(--main-orange-color) !important;
+  color: var(--main-orange-color) !important;
+}
+.btn:hover{
+  border-color: var(--main-green-color) !important;
+  color: var(--main-green-color) !important;
+  background-color: transparent !important;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
