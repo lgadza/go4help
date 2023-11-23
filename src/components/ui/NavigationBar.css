@@ -4,6 +4,6 @@
     right: 0;
     top: 0;
     z-index: 100;
-    background-color: var(--main-green-bg);
+    background-color: var(--main-green-color);
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   }

@@ -58,7 +58,6 @@ const HorizontalScrollGallery = () => {
   const showImages = () => {
     imagesRef.current.forEach((image) => {
       image.classList.remove("-clicked");
-      // image.classList.add("-active");
     });
   };
   console.log(imagesRef);
@@ -91,8 +90,6 @@ const HorizontalScrollGallery = () => {
       // onLoad={init}
       data-scroll-container
     >
-    
-      {/* {imagesRef.current.length > 0 && ( */}
       <div className="scrollsection" data-scroll-section>
         <div className="item -normal" data-scroll data-scroll-speed="2">
           <img
@@ -249,7 +246,6 @@ const HorizontalScrollGallery = () => {
           />
         </div>
       </div>
-      {/* )} */}
     </Row>
     </Container>
   );

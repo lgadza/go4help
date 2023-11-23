@@ -16,6 +16,14 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   
 }
+.zoomIn-images{
+  transform: translateX(0) translateY(0) scale(1);
+  
+}
+.zoomIn-images:hover{
+  transform: translateX(0) translateY(0) scale(1.05);
+  object-fit: cover;
+}
 .main-orange-color{
   color: var(--main-orange-color) !important;
 }

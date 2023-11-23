@@ -3,6 +3,7 @@ import NavigationBar from "../components/ui/NavigationBar"
 import HomeCarousel from "../components/ui/HomeCarousel"
 import HorizontalScrollGallery from "../components/ui/HorizontalScrollGallery"
 import SocialJusticeHeader from "../components/ui/SocialJusticeHeader"
+import PrioritiesSection from "../components/ui/PrioritiesSection"
 
 const Home=()=>{
 return(
@@ -11,6 +12,7 @@ return(
         <HomeCarousel/>
         <HorizontalScrollGallery/>
         <SocialJusticeHeader/>
+        <PrioritiesSection/>
     </Container>
 )
 }
