@@ -12,7 +12,10 @@
   overflow-x: hidden;
   /* font-family: 'Helvetica Neue', 'Arial Black', Arial, sans-serif; */
 }
-
+.card-box-shadow{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  
+}
 .main-orange-color{
   color: var(--main-orange-color) !important;
 }

@@ -3,7 +3,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { Row } from "react-bootstrap-v5";
 import "./HorizontalScrollGallery.css";
-import { Container } from "react-bootstrap";
+import { Col, Container } from "react-bootstrap";
 import OutlineButton from "./OutlineButton";
 
 const HorizontalScrollGallery = () => {
@@ -75,11 +75,15 @@ const HorizontalScrollGallery = () => {
   return (
     <Container fluid className="my-5 px-0 mx-0 horizontalScrollGallery ">
         <Container>
-      <div className=" py-5 text-start">
-      <h2 className="sub-header main-green-color">We are disrupting systems to advance social justice</h2>
-      <p>We believe in the inherent dignity of all people and that inequality is the defining challenge of our time.</p>
-      <OutlineButton text="How We Work"/>
-      </div>
+            <Row>
+                <Col sm={12} md={6}>            
+                    <div className=" py-5 text-start">
+                    <h1>We are disrupting systems to advance social justice</h1>
+                    <p>We believe in the inherent dignity of all people and that inequality is the defining challenge of our time.</p>
+                    <OutlineButton text="How We Work"/>
+                    </div>
+                </Col>
+            </Row>
         </Container>
     <Row
       className="scroll-animations"
@@ -87,6 +91,7 @@ const HorizontalScrollGallery = () => {
       // onLoad={init}
       data-scroll-container
     >
+    
       {/* {imagesRef.current.length > 0 && ( */}
       <div className="scrollsection" data-scroll-section>
         <div className="item -normal" data-scroll data-scroll-speed="2">
